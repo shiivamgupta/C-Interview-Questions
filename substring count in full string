@@ -11,13 +11,13 @@ void main()
 	printf("enter string");
 	scanf("%s",str1);
 	printf("enter substring");
-	scanf("%s",str1);
+	scanf("%s",str2);
 
-	for(int i=0;i<strlen(str1);i++)
+	for(int i=0;i<strlen(str1);++i)
 	{
-		if(str2[i]==str1[i])
+		if(str2[0]==str1[i])
 		{
-			for(int j=0;j<strlen(str2);j++)
+			for(int j=0;j<strlen(str2);++j)
 			{
 				if(str2[j]==str1[i])
 				{
@@ -27,11 +27,9 @@ void main()
 				{
 				break;
 				}
-				
 				if(j==(strlen(str2)-1))
 				count++;
 			}			
-	
 		}	
 	}
 	printf("%d\n",count);
